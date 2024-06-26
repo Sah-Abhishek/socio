@@ -2,7 +2,6 @@ require("dotenv").config()
 const express = require('express');
 const cors = require('cors');
 const { createPost, deletePost, createUser, loginUser } = require('./types')
-// const { Post, User } = require('./db')
 const Post  = require('./models/post');
 // const requiew { }
 const jwt = require('jsonwebtoken');
