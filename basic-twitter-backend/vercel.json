@@ -8,5 +8,8 @@
             "src": "/(.*)",
             "dest": "/"
         }
-    ]
+    ],
+    "env": {
+        "MONGO_ULR": "MONGO_ULR"
+    }
 }
