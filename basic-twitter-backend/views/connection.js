@@ -4,7 +4,8 @@ const connectMongoDB = async () => {
     return mongoose.connect(process.env.MONGO_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-    }).then((e) => console.log("mongobd connected"));
+    }).then((e) => console.log("mongobd connected"))
+    .catch(err => console.log("Mongodb error", err));
 
 }
 
