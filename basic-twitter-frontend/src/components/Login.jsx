@@ -21,7 +21,7 @@ const Login = () => {
     setUserNameError(!userName ? "Username is required" : "");
     setPasswordError(!password ? "Password is required" : "");
     try{
-      const response = await axios.post("http://localhost:3000/login", {
+      const response = await axios.post("https://socio-psi.vercel.app/login", {
         userName: userName,
         password: password,
       })

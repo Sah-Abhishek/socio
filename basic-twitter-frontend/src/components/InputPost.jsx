@@ -16,7 +16,7 @@ const InputPost = ({ username, handleRefetch}) => {
     }
 
     const axiosInstance = axios.create({
-        baseURL: "http://localhost:3000/post",
+        baseURL: "https://socio-psi.vercel.app/post",
         headers: {
             'Content-Type': 'application/json'
         }

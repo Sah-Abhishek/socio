@@ -15,7 +15,7 @@ const Feed = () => {
     const navigate = useNavigate();
 
     const axiosInstance = axios.create({
-        baseURL: 'http://localhost:3000',
+        baseURL: 'https://socio-psi.vercel.app',
         headers: {
             'Content-Type': 'application/json'
         }
