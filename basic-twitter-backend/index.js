@@ -19,11 +19,11 @@ connectMongoDB();
 
 const app = express();
 app.use(cors(
-    {
-        origin: ["https://socio-cli.vercel.app/"],
-        methods: ['POST', 'GET'],
-        credentials: true
-    }
+    // {
+    //     origin: ["https://socio-cli.vercel.app/"],
+    //     methods: ['POST', 'GET'],
+    //     credentials: true
+    // }
 ));
 
 /*
