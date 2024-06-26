@@ -3,12 +3,7 @@
     "builds": [
         { "src": "*.js", "use": "@vercel/node" }
     ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
-    ],
+    
     "env": {
         "MONGO_ULR": "MONGO_ULR"
     }
