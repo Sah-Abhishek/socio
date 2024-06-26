@@ -6,6 +6,8 @@ import Sidebar from "./Sidebar";
 import Sidebar2 from "./SideBar2";
 import IndiPost from "./IndiPost";
 
+//import
+
 const Feed = () => {
     const [errMessage, setErrMessage] = useState('');
     const [userName, setUserName] = useState('');
