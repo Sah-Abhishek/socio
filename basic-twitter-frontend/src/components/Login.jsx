@@ -26,6 +26,10 @@ const Login = () => {
       const response = await axios.post("https://socio-psi.vercel.app/login", {
         userName: userName,
         password: password,
+      },{
+        headers: {
+          'Acess-Control-Allow-Origin': 'https://socio-psi.vercel.app'
+        }
       })
       console.log(response.data.token);
       localStorage.setItem('token', response.data.token);
