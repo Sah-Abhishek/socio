@@ -21,9 +21,9 @@ const app = express();
 app.use(cors(
     {
         origin: ["https://socio-cli-abhisheks-projects-3a5a3785.vercel.app"],
-        methods: ['POST', 'GET'],
-        credentials: true,
-        allowedHeaders: ['Content-Type', 'Authorization'],
+        // methods: ['POST', 'GET'],
+        // credentials: true,
+        // allowedHeaders: ['Content-Type', 'Authorization'],
     }
 ));
 
