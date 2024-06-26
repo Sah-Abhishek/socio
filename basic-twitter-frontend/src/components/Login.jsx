@@ -28,7 +28,7 @@ const Login = () => {
         password: password,
       },{
         headers: {
-          'Acess-Control-Allow-Origin': 'https://socio-psi.vercel.app'
+          'Acess-Control-Allow-Origin': 'https://socio-psi.vercel.app/login'
         }
       })
       console.log(response.data.token);
