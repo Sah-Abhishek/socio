@@ -1,15 +1,15 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "./src",
-        "use": "@vercel/build-react"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/",
-        "dest": "/index.html"
-      }
-    ]
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "./src/main.jsx",
+      "use": "@vercel/build-react"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    }
+  ]
+}
