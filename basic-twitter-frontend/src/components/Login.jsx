@@ -10,7 +10,7 @@ const Login = () => {
   const [loginMessage, setLoginMessage] = useState('');
   const [token, setToken] = useState('');
   const navigate = useNavigate();
-  // axios.defaults.withCredentials = true;
+  axios.defaults.withCredentials = true;
 
 
 
