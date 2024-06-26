@@ -13,6 +13,11 @@ const { connectMongoDB } = require('./views/connection');
 const { default: mongoose } = require("mongoose");
 const  User = require("./models/user");
 connectMongoDB();
+
+
+
+
+const app = express();
 app.use(cors(
     {
         origin: ["https://socio-cli.vercel.app"],
@@ -21,11 +26,6 @@ app.use(cors(
         allowedHeaders: ['Content-Type', 'Authorization'],
     }
 ));
-
-
-
-
-const app = express();
 
 /*
 
