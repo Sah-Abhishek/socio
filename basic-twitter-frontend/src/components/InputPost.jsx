@@ -8,6 +8,8 @@ const InputPost = ({ username, handleRefetch}) => {
     const [postErrMsg, setPostErrMessage] = useState("");
     const userName = username;
     const token = localStorage.getItem('token');
+    axios.defaults.withCredentials = true;
+
 
     const handleChange = (event) => {
         console.log(event);

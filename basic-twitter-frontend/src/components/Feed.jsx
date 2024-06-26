@@ -13,6 +13,7 @@ const Feed = () => {
     const [email, setEmail] = useState('');
     const [lastName, setLastName] = useState('');
     const navigate = useNavigate();
+    axios.defaults.withCredentials = true;
 
     const axiosInstance = axios.create({
         baseURL: 'https://socio-psi.vercel.app',

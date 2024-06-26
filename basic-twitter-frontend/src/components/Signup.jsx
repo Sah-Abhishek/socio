@@ -16,6 +16,8 @@ const Signup = () => {
   const [signupMessage, setSignupMessage] = useState('');
   const [year, setYear] = useState('');
   const navigate = useNavigate();
+  axios.defaults.withCredentials = true;
+
 
 
   const handleSubmit = async (event) => {
