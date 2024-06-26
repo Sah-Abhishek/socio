@@ -1,3 +1,4 @@
 bacic-twitter-frontend/node_modules
 bacic-twitter-backend/node_modules
 basic-twitter-backend/.env
+.vercel
