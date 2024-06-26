@@ -20,7 +20,7 @@ connectMongoDB();
 const app = express();
 app.use(cors(
     {
-        origin: ["http://localhost:5173", "https://socio-cli.vercel.app"],
+        origin: ["https://socio-cli.vercel.app"],
         methods: ['POST', 'GET'],
         credentials: true
     }
