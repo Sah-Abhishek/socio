@@ -3,9 +3,19 @@ import './App.css'
 import Signup from './components/Signup'
 import { useSetAtom } from 'jotai'
 import { uiAtom } from './state'
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function App() {
-  const setUi = useSetAtom(uiAtom)
+  const setUi = useSetAtom(uiAtom);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token)
+      navigate('/feed');
+
+  }, [])
 
   return (
     <>
