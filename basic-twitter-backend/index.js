@@ -22,7 +22,8 @@ app.use(cors(
     {
         origin: ["https://socio-cli.vercel.app/"],
         methods: ['POST', 'GET'],
-        credentials: true
+        credentials: true,
+        allowedHeaders: ['Content-Type', 'Authorization'],
     }
 ));
 
